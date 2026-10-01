@@ -1,0 +1,1 @@
+const express=require('express'),cors=require('cors');const app=express();app.use(cors());app.use(express.json());app.post('/api/ask',(req,res)=>{res.json({answer:'EDU Genie received: '+req.body.question+'\nConnect this endpoint to Google Gemini/Google Cloud Generative AI for live answers.'})});app.listen(3000,()=>console.log('Server: http://localhost:3000'));
